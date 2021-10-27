@@ -16,7 +16,6 @@ query{
 }
 `
 
-
 export default function Index({ data }) {
 
   return(
