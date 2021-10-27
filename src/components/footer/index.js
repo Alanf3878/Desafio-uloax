@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 const Footer = () => {
     return ( 
         <div>
-            asdad
+            
         </div>
      );
 }

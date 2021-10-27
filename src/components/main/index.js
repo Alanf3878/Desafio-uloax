@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 const Main = () => {
     return ( 
         <div>
-            asdad
+            
         </div>
      );
 }
