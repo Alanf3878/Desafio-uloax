@@ -1,9 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import Header from '../components/header'
 import Main from '../components/main'
 import Footer from '../components/footer'
-
+import "../components/global/global.css"
 
 export default function Index() {
 
