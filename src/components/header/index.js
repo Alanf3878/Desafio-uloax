@@ -9,28 +9,30 @@ const Header = () => {
         alldata {
             headers {
                 btnhome
-                titlebooknow
-                btnbooking
                 btncontact
                 btnsearch
                 btntaxi
                 btnseta
-                imgcar {
-                  url
-                }
+                btnsetaright
                 telephone
                 titlebooknow
                 textinput
                 text
-                logo {
+                btnbooking
+                    imgcar {
+                      url
+                    }
+                    logo {
                   url
                 }
-            }
+              }
         }
     }`)
     const{
+
        btncontact,
        btnseta,
+       btnsetaright,
        btnbooking,
        btnsearch,
        btntaxi,
@@ -45,6 +47,7 @@ const Header = () => {
 
     return (
         <S.Container>
+            <S.Headerbox>
             <S.Containernav>
                 <S.Logo>
                 <img src={logo.url}/>
@@ -54,14 +57,19 @@ const Header = () => {
             <S.Itembtn>{btnbooking}</S.Itembtn>
             <S.Itembtn>{btncontact}</S.Itembtn>
             </S.Containernav>
-
+            </S.Headerbox>
+          
             <S.Containerslide>
+                <S.Containerseta>
+                    <S.Btnseta>{btnseta}</S.Btnseta>
+                    <S.Btnseta>{btnsetaright}</S.Btnseta>
+                </S.Containerseta>
              <S.Boxcar>
               <S.Boxyellow>
-                <S.Paragraph>{titlebooknow}</S.Paragraph>
-                <> <h2>{telephone}</h2> </>
+                <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>
+                <S.Telephone>{telephone}</S.Telephone> 
               </S.Boxyellow>
-              <img src={imgcar.url}/>
+              <S.Yellowcar src={imgcar.url}/>
             </S.Boxcar>
             <S.Inputcontainer>
                 <S.Paragraph>{text}</S.Paragraph>
