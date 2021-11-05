@@ -11,7 +11,7 @@ export const Container = styled.section`
 `
 
 export const Boxtitle = styled.div`
-  margin: 84px auto 50px auto;
+  margin: 90px auto 90px auto;
   display: flex;
 `
 export const TitleOur = styled.h2`
@@ -27,14 +27,14 @@ export const BoxCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 1225px;
+  width: 1170px;
 `
 export const Card = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 368px;
-  height: 350px;
+  width: 360px;
+  height: 375px;
   background-color: #FFFFFF;
 `
 export const Number = styled.div`
@@ -42,18 +42,23 @@ export const Number = styled.div`
   bottom: 10%;
   left: 0;
   background: #f8ca11;
-  width: 25px;
+  width: 77px;
   color: #FFFFFF;
   padding: 24px;
   border-radius: 60px;
   font-size: 24px;
 `
 export const TitleCar = styled.h2`
+  padding: 0 0 25px 0;
+  color: #2b3436;
+  font-weight: normal;
 `
 export const ParagraphCar = styled.p`
   font-size: 20px;
   text-align: center;
   width: 220px;
+  color: #2b3436;
+  font-weight: 300;
 `
 export const ImgCar = styled.img`
   
