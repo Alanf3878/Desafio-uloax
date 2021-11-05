@@ -52,7 +52,7 @@ justify-content: center;
 `
 export const Boxinput = styled.div`
 width:50%;
-height: 80%;
+
 `
 export const Search = styled.button`
 margin-top: 1rem;
@@ -98,7 +98,8 @@ export const Telephone = styled.p`
 font-size: 38px;
 `
 export const Yellowcar = styled.img`
-width: 100%;
+width: 85%;
+height: 60%;
 `
 export const Containerseta = styled.div`
 width: 120px;

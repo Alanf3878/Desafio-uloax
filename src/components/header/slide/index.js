@@ -37,14 +37,14 @@ export default function SimpleSlider () {
   } = data.alldata.headers[0];
   
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div style={{overflowX:"hidden"}}>
         <Slider {...settings}>
           <div>
           <S.Containerslide>
@@ -83,7 +83,7 @@ export default function SimpleSlider () {
         </S.Containerseta>
         <S.Boxcar>
          <S.Boxyellow>
-             <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        
+             <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>    
                   <S.Telephone>{telephone}</S.Telephone>
            </S.Boxyellow>
           <S.Yellowcar src={imgcar.url} />
