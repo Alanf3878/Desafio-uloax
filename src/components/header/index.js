@@ -1,44 +1,45 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import * as S from "./style"; 
+import SimpleSlider from '../header/slide/index';
 
 const Header = () => {
-
     const data = useStaticQuery(graphql`
     query {
         alldata {
             headers {
+                btnhome
                 btncontact
-                btnsearch
                 btntaxi
-                btnseta
-                imgcar {
+                btnbooking
+                    logo {
                   url
                 }
-                telephone
-                titlebooknow
-                textinput
-                text
-                logo {
-                  url
-                }
-            }
+              }
         }
     }`)
-    const{ 
+    const{
        btncontact,
-       btnseta,
-       btnsearch,
+       btnbooking,
        btntaxi,
-       logo
-         } = data.alldata.headers[0]
+       logo,
+       btnhome
+    } = data.alldata.headers[0]
     return (
-        <div>
-    <button>{btncontact}</button>
-    <button>{btnsearch}</button>
-    <button>{btntaxi}</button>
-    <button>{ btnseta}</button>
-    <img src={logo.url}/>  
-        </div>
+        <S.Container>
+            <S.Headerbox>
+            <S.Containernav>
+                <S.Logo>
+                <img src={logo.url}/>
+                </S.Logo>
+            <S.Itembtn>{btnhome}</S.Itembtn>
+            <S.Itembtn>{btntaxi}</S.Itembtn>
+            <S.Itembtn>{btnbooking}</S.Itembtn>
+            <S.Itembtn>{btncontact}</S.Itembtn>
+            </S.Containernav>
+            </S.Headerbox>
+            <SimpleSlider/>
+        </S.Container>
      );
 }
 export default Header;
