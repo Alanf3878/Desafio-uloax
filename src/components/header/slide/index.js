@@ -1,10 +1,12 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import * as S from "./style";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { graphql, useStaticQuery } from 'gatsby'
+import * as S from "./style"; 
 
-const Slide = () => {
-   
-  const data = useStaticQuery(graphql`
+export default function SimpleSlider () {
+    const data = useStaticQuery(graphql`
     query {
       alldata {
         headers {
@@ -22,6 +24,7 @@ const Slide = () => {
       }
     }
   `);
+
   const {
     btnseta,
     btnsetaright,
@@ -32,27 +35,37 @@ const Slide = () => {
     textinput,
     imgcar,
   } = data.alldata.headers[0];
-
-  return (
-      <S.Containerslide>
-        <S.Containerseta>
+  
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <div>
+        <Slider {...settings}>
+          <div>
+          <S.Containerslide>
+       <S.Containerseta>
           <S.Btnseta>{btnseta}</S.Btnseta>
           <S.Btnseta>{btnsetaright}</S.Btnseta>
         </S.Containerseta>
         <S.Boxcar>
-          <S.Boxyellow>
-            <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>
-            <S.Telephone>{telephone}</S.Telephone>
-          </S.Boxyellow>
+         <S.Boxyellow>
+             <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        
+                  <S.Telephone>{telephone}</S.Telephone>
+           </S.Boxyellow>
           <S.Yellowcar src={imgcar.url} />
         </S.Boxcar>
-        <S.Inputcontainer>
-          <S.Paragraph>{text}</S.Paragraph>
-          <S.Formcontainer>
-            <S.Inputbox>
-              <S.Intemtext>
-                <p>{textinput}</p>
-              </S.Intemtext>
+       <S.Inputcontainer>
+         <S.Paragraph>{text}</S.Paragraph>
+         <S.Formcontainer>
+      <S.Inputbox> 
+            <S.Intemtext>
+               <p>{textinput}</p>
+             </S.Intemtext> 
               <S.Iteminput type="text" placeholder="PICKUP" />
               <S.Iteminput type="text" placeholder="DROP" />
               <S.Iteminput type="text" placeholder="WHEN" />
@@ -61,6 +74,37 @@ const Slide = () => {
           </S.Formcontainer>
         </S.Inputcontainer>
       </S.Containerslide>
-  );
-};
-export default Slide;
+          </div>
+          <div>
+          <S.Containerslide>
+       <S.Containerseta>
+          <S.Btnseta>{btnseta}</S.Btnseta>
+          <S.Btnseta>{btnsetaright}</S.Btnseta>
+        </S.Containerseta>
+        <S.Boxcar>
+         <S.Boxyellow>
+             <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        
+                  <S.Telephone>{telephone}</S.Telephone>
+           </S.Boxyellow>
+          <S.Yellowcar src={imgcar.url} />
+        </S.Boxcar>
+       <S.Inputcontainer>
+         <S.Paragraph>{text}</S.Paragraph>
+         <S.Formcontainer>
+      <S.Inputbox> 
+            <S.Intemtext>
+               <p>{textinput}</p>
+             </S.Intemtext> 
+              <S.Iteminput type="text" placeholder="PICKUP" />
+              <S.Iteminput type="text" placeholder="DROP" />
+              <S.Iteminput type="text" placeholder="WHEN" />
+              <S.Search>{btnsearch}</S.Search>
+            </S.Inputbox>
+          </S.Formcontainer>
+        </S.Inputcontainer>
+      </S.Containerslide>
+          </div>
+        </Slider>
+      </div>
+    );
+  }

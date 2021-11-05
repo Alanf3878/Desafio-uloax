@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as S from "./style"; 
-import Slide from './slide';
+import SimpleSlider from '../header/slide/index';
 
 const Header = () => {
     const data = useStaticQuery(graphql`
@@ -38,7 +38,7 @@ const Header = () => {
             <S.Itembtn>{btncontact}</S.Itembtn>
             </S.Containernav>
             </S.Headerbox>
-            <Slide/>
+            <SimpleSlider/>
         </S.Container>
      );
 }

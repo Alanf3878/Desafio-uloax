@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Containerslide = styled.div`
 width: 100%;
-height: 90%;
+height: 65vh;
 display: flex;
 justify-content: space-evenly;
 padding-top: 1rem;
@@ -20,12 +20,11 @@ flex-direction: column;
 `
 export const Formcontainer = styled.form`
 width: 95%;
-height: 61%;
+height: 70%;
 background-color: #fff;
 display: flex;
 justify-content: center;
 text-align: center;
-margin-bottom: 5rem;
 `
 export const Inputbox = styled.div`
 width: 90%;
@@ -72,11 +71,11 @@ padding: 1rem;
 `
 export const Inputcontainer = styled.div`
 width: 52%;
+height: 80%;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 text-align: center;
-height:94%;
 font-size: 28px;
 align-content: inherit;
 `
