@@ -11,8 +11,8 @@ export default function Index() {
   return(
     <div>
    <Header/>
-   <Main/>
    <Card/>
+   <Main/>
    <Dowload/>
    <Footer/>
     </div>

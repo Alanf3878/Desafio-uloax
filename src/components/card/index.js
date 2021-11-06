@@ -16,7 +16,7 @@ const Card = () => {
           }
         }
     }`
-  )
+    )
 
   const {
     titleour,
@@ -39,14 +39,12 @@ const Card = () => {
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
           <S.ImgCar></S.ImgCar>
         </S.Card>
-
         <S.Card>
           <S.Number>{card[1]}</S.Number>
           <S.TitleCar>{titlecard[1]}</S.TitleCar>
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
           <S.ImgCar></S.ImgCar>
         </S.Card>
-
         <S.Card>
           <S.Number>{card[2]}</S.Number>
           <S.TitleCar>{titlecard[2]}</S.TitleCar>
