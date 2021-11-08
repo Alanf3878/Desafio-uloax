@@ -35,7 +35,6 @@ export default function SimpleSlider () {
     textinput,
     imgcar,
   } = data.alldata.headers[0];
-  
     const settings = {
       dots: false,
       infinite: true,
@@ -46,8 +45,8 @@ export default function SimpleSlider () {
     return (
       <div style={{overflowX:"hidden"}}>
         <Slider {...settings}>
-          <div>
-          <S.Containerslide>
+          <div id="home">
+          <S.Containerslide id ="home"> 
        <S.Containerseta>
           <S.Btnseta>{btnseta}</S.Btnseta>
           <S.Btnseta>{btnsetaright}</S.Btnseta>

@@ -18,7 +18,7 @@ const Card = () => {
           }
         }
     }`
-  )
+    )
 
   const {
     titleour,
@@ -29,7 +29,7 @@ const Card = () => {
   } = data.alldata.mains[0]
 
   return (
-    <S.Container>
+    <S.Container id = "taxi">
       <S.Boxtitle>
         <S.TitleOur>{titleour}</S.TitleOur>
         <S.TitleTaxi>{titletaxi}</S.TitleTaxi>
@@ -41,14 +41,12 @@ const Card = () => {
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
           <S.ImgCar href="#" id="icon" src={Car} ></S.ImgCar>
         </S.Card>
-
         <S.Card>
           <S.Number>{card[1]}</S.Number>
           <S.TitleCar>{titlecard[1]}</S.TitleCar>
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
           <S.ImgCar href="#" id="icon" src={Car} ></S.ImgCar>
         </S.Card>
-
         <S.Card>
           <S.Number>{card[2]}</S.Number>
           <S.TitleCar>{titlecard[2]}</S.TitleCar>
