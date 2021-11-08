@@ -39,6 +39,7 @@ const Footer = () => {
         title2019
     } = data.alldata.footers[0]
 
+    
     return (
         <div>
             <S.Container id ="contact">

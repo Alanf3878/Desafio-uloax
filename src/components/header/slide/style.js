@@ -110,15 +110,20 @@ justify-content: center;
 align-content: space-around;
 height: 33%;
 `
-export const Btnseta = styled.button`
-width: 70px;
-height: 70px;
-border-radius: 50%;
-font-size: 25px;
-border:none;
-&:hover {
-        background-color:#f8ca11;
-        cursor: pointer;
-        color: #fff;
-    }
+export const SampleNextArrow = styled.div`
+top:300px;
+left: 0;
+z-index: 99;
+::before {
+    color: #f8ca11;
+    left: calc(50% - 10px);
+    top: calc(50% - 10px);
+    position: absolute;
+    font-size: 80px;
+
+}
+`
+export const SamplePrevArrow = styled(SampleNextArrow)`
+top:400px;
+
 `

@@ -33,24 +33,28 @@ export default function SimpleSlider () {
     telephone,
     text,
     textinput,
-    imgcar,
+    imgcar
   } = data.alldata.headers[0];
+
+
+
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      nextArrow: <S.SampleNextArrow />,
+      prevArrow: <S.SamplePrevArrow />
+      
     };
+    
+
     return (
       <div style={{overflowX:"hidden"}}>
         <Slider {...settings}>
-          <div id="home">
-          <S.Containerslide id ="home"> 
-       <S.Containerseta>
-          <S.Btnseta>{btnseta}</S.Btnseta>
-          <S.Btnseta>{btnsetaright}</S.Btnseta>
-        </S.Containerseta>
+          <div>
+          <S.Containerslide id ="home">
         <S.Boxcar>
          <S.Boxyellow>
              <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        
@@ -72,17 +76,13 @@ export default function SimpleSlider () {
             </S.Inputbox>
           </S.Formcontainer>
         </S.Inputcontainer>
-      </S.Containerslide>
+      </S.Containerslide>        
           </div>
           <div>
-          <S.Containerslide>
-       <S.Containerseta>
-          <S.Btnseta>{btnseta}</S.Btnseta>
-          <S.Btnseta>{btnsetaright}</S.Btnseta>
-        </S.Containerseta>
+          <S.Containerslide id ="home">
         <S.Boxcar>
          <S.Boxyellow>
-             <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>    
+             <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        
                   <S.Telephone>{telephone}</S.Telephone>
            </S.Boxyellow>
           <S.Yellowcar src={imgcar.url} />
@@ -101,8 +101,11 @@ export default function SimpleSlider () {
             </S.Inputbox>
           </S.Formcontainer>
         </S.Inputcontainer>
-      </S.Containerslide>
+      </S.Containerslide>        
           </div>
+
+          
+
         </Slider>
       </div>
     );

@@ -25,6 +25,9 @@ const Main = () => {
             imgpocket {
               url
             }
+
+          
+            
         }
     }
     }`
@@ -60,9 +63,9 @@ const Main = () => {
                <S.Sectiontext>
                <S.Texttitle>{titlepocket}</S.Texttitle>
                <p>{textwallet}</p>
-               <S.Boxbtn>
+            
                <S.Btn>{btnbooknow}</S.Btn>
-               </S.Boxbtn>
+         
               </S.Sectiontext>
           </S.Container>
 
@@ -87,7 +90,7 @@ const Main = () => {
           </S.Container>
 
           <S.Containerright>
-               <S.Img src={imgsecured.url}/>
+               <S.Img src={imgpocket.url}/>
                <S.Sectiontextright>
                <S.Texttitle>{titlepocket}</S.Texttitle>
                <p>{textrides}</p>
