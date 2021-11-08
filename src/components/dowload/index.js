@@ -8,6 +8,8 @@ const Dowload = () => {
     query {
         alldata {
           mains{
+            downloadapp
+  	        download
             imgrides{
               url
             }
@@ -21,15 +23,17 @@ const Dowload = () => {
 
   const {
     imgrides,
-    imgcel
+    imgcel,
+    downloadapp,
+    download
   } = data.alldata.mains[0]
 
   return (
     <S.Container ImgGrid={imgrides.url} >
       <S.BoxTitle>
         <S.TitleBox>
-          <S.Title>DOWNLOAD</S.Title>
-          <S.SubTitle>OUR APP TODAY</S.SubTitle>
+          <S.Title>{downloadapp}</S.Title>
+          <S.SubTitle>{download}</S.SubTitle>
         </S.TitleBox>
       </S.BoxTitle>
       <S.Box>

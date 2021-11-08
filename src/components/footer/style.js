@@ -116,6 +116,7 @@ export const Button = styled.div`
   border-radius: 5px;
   cursor: pointer;
 `
+
 export const Input = styled.input`
   width: 100%;
   color: #eceaea;
@@ -129,12 +130,14 @@ export const Input = styled.input`
     width: 100%;
   }
 `
+
 export const Title = styled.h3`
   padding: 25px 0;
   font-size: 28px;
   color: #ebebeb;
   font-weight: bold;
 `
+
 export const Subtitle = styled.p`
   text-align: center;
   font-weight: 400;
