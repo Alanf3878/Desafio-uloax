@@ -25,9 +25,6 @@ const Main = () => {
             imgpocket {
               url
             }
-
-          
-            
         }
     }
     }`

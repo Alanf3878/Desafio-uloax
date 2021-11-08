@@ -43,43 +43,17 @@ export default function SimpleSlider () {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-<<<<<<< HEAD
-      slidesToScroll: 1
-=======
       slidesToScroll: 1,
-<<<<<<< HEAD
       nextArrow: <S.SampleNextArrow />,
       prevArrow: <S.SamplePrevArrow />
-      
-=======
-      nextArrow: <S.Btnseta />,
-      prevArrow: <S.Btnseta />
->>>>>>> 220e53f137f0924283a504304eb0f98b47c86061
->>>>>>> 72b6782b5fef3f286fe4dd289168040039cc7a20
     };
     
 
     return (
       <div style={{overflowX:"hidden"}}>
         <Slider {...settings}>
-<<<<<<< HEAD
           <div>
           <S.Containerslide id ="home">
-=======
-          <div id="home">
-          <S.Containerslide id ="home"> 
-<<<<<<< HEAD
-       <S.Containerseta>
-          <S.Btnseta>{btnseta}</S.Btnseta>
-          <S.Btnseta>{btnsetaright}</S.Btnseta>
-        </S.Containerseta>
-=======
-       {/* <S.Containerseta>
-          <S.Btnseta>{tbtnseta}</S.Btnseta>
-          <S.Btnseta>{btnsetarigh}</S.Btnseta>
-        </S.Containerseta> */}
->>>>>>> 220e53f137f0924283a504304eb0f98b47c86061
->>>>>>> 72b6782b5fef3f286fe4dd289168040039cc7a20
         <S.Boxcar>
          <S.Boxyellow>
              <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        
