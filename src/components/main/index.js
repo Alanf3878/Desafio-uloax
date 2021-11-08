@@ -14,11 +14,11 @@ const Main = () => {
             titlerides
             titlepocket
             btnbooknow
-            titleour
             titlecard
             textwallet
             textsecured
             textrides
+            titlewith
             imgsecured {
               url
             }
@@ -31,6 +31,7 @@ const Main = () => {
   )
   const{
     titleuloax,
+    titlewith,
     textwallet,
     btnbooknow,
     titlesecured,
@@ -44,16 +45,21 @@ const Main = () => {
  } = data.alldata.mains[0]
 
     return ( 
-        <S.Maincontainer>
+        <S.Maincontainer id ="booking">
           <S.Title>
+            <S.Boxtitle>
             <p>{titleuloax}</p>
+            <S.ParaghTitle>{titlewith}</S.ParaghTitle>
+            </S.Boxtitle>
+            
+            <S.Backline></S.Backline>
           </S.Title>
           <S.Sectionbox>
           <S.Container>
                <S.Img src={imgpocket.url}/>
                <S.Sectiontext>
                <S.Texttitle>{titlepocket}</S.Texttitle>
-               <p>{textrides}</p>
+               <p>{textwallet}</p>
                <S.Boxbtn>
                <S.Btn>{btnbooknow}</S.Btn>
                </S.Boxbtn>
@@ -89,10 +95,6 @@ const Main = () => {
               </S.Sectiontextright>
           </S.Containerright>
 
-  
-
-  
-    
           </S.Sectionbox>
     
         </S.Maincontainer>

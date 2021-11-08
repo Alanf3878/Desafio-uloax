@@ -16,9 +16,9 @@ height: 65px;
 export const Logo = styled.div`
 width: 30rem;
 `
-export const Itembtn = styled.button`
-    background: transparent;
-    border: 0;
+export const Itembtn = styled.a`
+
+    text-decoration: none;
     font-size: 17px;
     color: #fff;
     &:hover {
@@ -30,8 +30,6 @@ export const Container = styled.div`
 background-color: #1a1a1a;
 height: 65vh;
 ` 
-
-
 
 
 

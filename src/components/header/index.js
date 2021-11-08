@@ -32,10 +32,10 @@ const Header = () => {
                 <S.Logo>
                 <img src={logo.url}/>
                 </S.Logo>
-            <S.Itembtn><a href="#home">{btnhome}</a></S.Itembtn>
-            <S.Itembtn><a href="#taxi">{btntaxi}</a></S.Itembtn>
-            <S.Itembtn><a href="#booking">{btnbooking}</a></S.Itembtn>
-            <S.Itembtn><a href="#contact">{btncontact}</a></S.Itembtn>
+            <S.Itembtn href="#home">{btnhome}</S.Itembtn>
+            <S.Itembtn href="#taxi">{btntaxi}</S.Itembtn>
+            <S.Itembtn href="#booking">{btnbooking}</S.Itembtn>
+            <S.Itembtn href="#contact">{btncontact}</S.Itembtn>
             </S.Containernav>
             </S.Headerbox>
             <SimpleSlider/>

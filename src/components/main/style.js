@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Maincontainer = styled.div`
+export const Maincontainer = styled.section`
 height: 150vh;
 width: 100%;
 
@@ -9,13 +9,30 @@ width: 100%;
 
 
 export const Title = styled.div`
-font-size: 35px;
-
+font-size: 40px;
 display: flex;
 justify-content: center;
-padding: 5rem;
-
+align-items: center;
+height: 200px ;
+flex-direction: column;
 `
+export const Boxtitle =styled.div`
+width: 500px;
+display: flex;
+justify-content: center;
+padding: 1rem;
+`
+export const ParaghTitle = styled.p`
+color: #ffc107;
+margin-left: 10px;
+`
+
+export const Backline = styled.div`
+background-color: #1a1a1a;
+width: 500px;
+height: 2px;
+`
+
 
 export const Container = styled.div` 
 width: 70%;
@@ -84,3 +101,4 @@ text-align: end;
 font-size: 16px;
 
 `
+

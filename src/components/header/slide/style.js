@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Containerslide = styled.div`
+export const Containerslide = styled.section`
 width: 100%;
 height: 65vh;
 display: flex;

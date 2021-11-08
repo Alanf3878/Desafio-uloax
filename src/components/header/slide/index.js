@@ -46,7 +46,7 @@ export default function SimpleSlider () {
       <div style={{overflowX:"hidden"}}>
         <Slider {...settings}>
           <div id="home">
-          <S.Containerslide>
+          <S.Containerslide id ="home"> 
        <S.Containerseta>
           <S.Btnseta>{btnseta}</S.Btnseta>
           <S.Btnseta>{btnsetaright}</S.Btnseta>

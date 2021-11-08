@@ -41,7 +41,7 @@ const Footer = () => {
 
     return (
         <div>
-            <S.Container>
+            <S.Container id ="contact">
                 <S.BoxContainer>
                 <S.Adress>
                     <S.Title>{titleaddres}</S.Title>

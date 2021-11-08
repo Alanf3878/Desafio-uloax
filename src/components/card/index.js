@@ -27,7 +27,7 @@ const Card = () => {
   } = data.alldata.mains[0]
 
   return (
-    <S.Container>
+    <S.Container id = "taxi">
       <S.Boxtitle>
         <S.TitleOur>{titleour}</S.TitleOur>
         <S.TitleTaxi>{titletaxi}</S.TitleTaxi>
