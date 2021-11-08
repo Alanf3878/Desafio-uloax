@@ -103,9 +103,6 @@ export default function SimpleSlider () {
         </S.Inputcontainer>
       </S.Containerslide>        
           </div>
-
-          
-
         </Slider>
       </div>
     );

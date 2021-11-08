@@ -2,22 +2,24 @@ import styled from 'styled-components'
 
 export const Headerbox = styled.div`
 display: flex;
-width: 88%;
+width: 100%;
 justify-content: center;
-margin-left: 5%;
+position: fixed;
+background-color: #1a1a1a;
+z-index: 1;
+height: 50px;
 `
+
 export const Containernav = styled.div`
 display: flex;
 justify-content: space-between;
-align-items: center;
 width: 80%;
-height: 65px;
+align-items: center;
 `
 export const Logo = styled.div`
 width: 30rem;
 `
 export const Itembtn = styled.a`
-
     text-decoration: none;
     font-size: 17px;
     color: #fff;
@@ -28,7 +30,8 @@ export const Itembtn = styled.a`
 `
 export const Container = styled.div`
 background-color: #1a1a1a;
-height: 65vh;
+width: 100%;
+
 ` 
 
 

@@ -7,6 +7,7 @@ display: flex;
 justify-content: space-evenly;
 padding-top: 1rem;
 padding-left: 3rem;
+margin-top: 5rem;
 `
 export const Boxyellow = styled.div`
 width: 88%;
