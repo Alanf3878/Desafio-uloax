@@ -2,36 +2,33 @@ import React from 'react'
 import * as S from "./style";
 import { graphql, useStaticQuery } from 'gatsby'
 
+import Phone from "../../images/img-7.png"
+
 const Dowload = () => {
 
-  const data = useStaticQuery(graphql`
-    query {
-        alldata {
-          mains{
-            titletaxi
-            card
-            titlecard
-            informcard
-          }
-        }
-    }`
-  )
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //       alldata {
+  //         mains{
+  //         }
+  //       }
+  //   }`
+  // )
 
-  const {
-    titletaxi,
-    card,
-    titlecard,
-    informcard
-  } = data.alldata.mains[0]
+  // const {
+  // } = data.alldata.mains[0]
 
   return (
     <S.Container>
-      <div>
-        {titletaxi}
-        {card}
-        {titlecard}
-        {informcard}
-      </div>
+      <S.BoxTitle>
+        <S.TitleBox>
+          <S.Title>DOWNLOAD</S.Title>
+          <S.SubTitle>OUR APP TODAY</S.SubTitle>
+        </S.TitleBox>
+      </S.BoxTitle>
+      <S.Box>
+        <S.Cell href="#" id="icon" src={Phone}></S.Cell>
+      </S.Box>
     </S.Container>
   );
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import * as S from "./style";
 import { graphql, useStaticQuery } from 'gatsby'
 
+import Car from "../../images/img-2.png"
+
 const Card = () => {
 
   const data = useStaticQuery(graphql`
@@ -37,21 +39,21 @@ const Card = () => {
           <S.Number>{card[0]}</S.Number>
           <S.TitleCar>{titlecard[0]}</S.TitleCar>
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
-          <S.ImgCar></S.ImgCar>
+          <S.ImgCar href="#" id="icon" src={Car} ></S.ImgCar>
         </S.Card>
 
         <S.Card>
           <S.Number>{card[1]}</S.Number>
           <S.TitleCar>{titlecard[1]}</S.TitleCar>
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
-          <S.ImgCar></S.ImgCar>
+          <S.ImgCar href="#" id="icon" src={Car} ></S.ImgCar>
         </S.Card>
 
         <S.Card>
           <S.Number>{card[2]}</S.Number>
           <S.TitleCar>{titlecard[2]}</S.TitleCar>
           <S.ParagraphCar>{informcard}</S.ParagraphCar>
-          <S.ImgCar></S.ImgCar>
+          <S.ImgCar href="#" id="icon" src={Car}></S.ImgCar>
         </S.Card>
       </S.BoxCard>
     </S.Container>
