@@ -8,30 +8,33 @@ const Dowload = () => {
     query {
         alldata {
           mains{
-            titletaxi
-            card
-            titlecard
-            informcard
+            imgrides{
+              url
+            }
+            imgcel{
+              url
+            }
           }
         }
     }`
   )
 
   const {
-    titletaxi,
-    card,
-    titlecard,
-    informcard
+    imgrides,
+    imgcel
   } = data.alldata.mains[0]
 
   return (
-    <S.Container>
-      <div>
-        {titletaxi}
-        {card}
-        {titlecard}
-        {informcard}
-      </div>
+    <S.Container ImgGrid={imgrides.url} >
+      <S.BoxTitle>
+        <S.TitleBox>
+          <S.Title>DOWNLOAD</S.Title>
+          <S.SubTitle>OUR APP TODAY</S.SubTitle>
+        </S.TitleBox>
+      </S.BoxTitle>
+      <S.Box>
+        <S.Cell src={imgcel.url} ></S.Cell>
+      </S.Box>
     </S.Container>
   );
 }

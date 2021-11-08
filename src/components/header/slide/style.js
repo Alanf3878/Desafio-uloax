@@ -110,6 +110,7 @@ justify-content: center;
 align-content: space-around;
 height: 33%;
 `
+<<<<<<< HEAD
 export const SampleNextArrow = styled.div`
 top:300px;
 left: 0;
@@ -122,6 +123,22 @@ z-index: 99;
     font-size: 80px;
 
 }
+=======
+export const Btnseta = styled.button`
+top: 250px;
+left: 0;
+width: 70px;
+height: 70px;
+border-radius: 50%;
+font-size: 25px;
+border:none;
+background-color:#f8ca11;
+&:hover {
+        background-color:#f8ca11;
+        cursor: pointer;
+        color: #fff;
+    }
+>>>>>>> 220e53f137f0924283a504304eb0f98b47c86061
 `
 export const SamplePrevArrow = styled(SampleNextArrow)`
 top:400px;

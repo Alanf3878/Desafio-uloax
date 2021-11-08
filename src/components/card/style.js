@@ -37,6 +37,9 @@ export const Card = styled.div`
   height: 375px;
   background-color: #FFFFFF;
 `
+export const Icon = styled.img`
+`
+
 export const Number = styled.div`
   position: relative;
   bottom: 10%;
@@ -61,7 +64,7 @@ export const ParagraphCar = styled.p`
   font-weight: 300;
 `
 export const ImgCar = styled.img`
-  
+  padding: 18px;
 `
 // export const 0 = styled.section`
 
