@@ -40,17 +40,19 @@ export default function SimpleSlider () {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      nextArrow: <S.Btnseta />,
+      prevArrow: <S.Btnseta />
     };
     return (
       <div style={{overflowX:"hidden"}}>
         <Slider {...settings}>
           <div id="home">
           <S.Containerslide id ="home"> 
-       <S.Containerseta>
-          <S.Btnseta>{btnseta}</S.Btnseta>
-          <S.Btnseta>{btnsetaright}</S.Btnseta>
-        </S.Containerseta>
+       {/* <S.Containerseta>
+          <S.Btnseta>{tbtnseta}</S.Btnseta>
+          <S.Btnseta>{btnsetarigh}</S.Btnseta>
+        </S.Containerseta> */}
         <S.Boxcar>
          <S.Boxyellow>
              <S.Bookparagraph>{titlebooknow}</S.Bookparagraph>        

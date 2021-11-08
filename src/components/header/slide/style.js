@@ -111,11 +111,14 @@ align-content: space-around;
 height: 33%;
 `
 export const Btnseta = styled.button`
+top: 250px;
+left: 0;
 width: 70px;
 height: 70px;
 border-radius: 50%;
 font-size: 25px;
 border:none;
+background-color:#f8ca11;
 &:hover {
         background-color:#f8ca11;
         cursor: pointer;

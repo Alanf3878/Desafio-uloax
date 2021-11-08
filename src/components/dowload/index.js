@@ -2,24 +2,30 @@ import React from 'react'
 import * as S from "./style";
 import { graphql, useStaticQuery } from 'gatsby'
 
-import Phone from "../../images/img-7.png"
-
 const Dowload = () => {
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //       alldata {
-  //         mains{
-  //         }
-  //       }
-  //   }`
-  // )
+  const data = useStaticQuery(graphql`
+    query {
+        alldata {
+          mains{
+            imgrides{
+              url
+            }
+            imgcel{
+              url
+            }
+          }
+        }
+    }`
+  )
 
-  // const {
-  // } = data.alldata.mains[0]
+  const {
+    imgrides,
+    imgcel
+  } = data.alldata.mains[0]
 
   return (
-    <S.Container>
+    <S.Container ImgGrid={imgrides.url} >
       <S.BoxTitle>
         <S.TitleBox>
           <S.Title>DOWNLOAD</S.Title>
@@ -27,7 +33,7 @@ const Dowload = () => {
         </S.TitleBox>
       </S.BoxTitle>
       <S.Box>
-        <S.Cell href="#" id="icon" src={Phone}></S.Cell>
+        <S.Cell src={imgcel.url} ></S.Cell>
       </S.Box>
     </S.Container>
   );
