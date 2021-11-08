@@ -33,7 +33,7 @@ flex-wrap: wrap;
 
 `
 export const Sectiontext = styled.div`
-width: 30%;
+width:  68%;
 display: flex;
 justify-content: space-evenly;
 padding-left:2rem;
@@ -75,7 +75,7 @@ height: 30vh ;
 flex-direction: row-reverse;
 `
 export const Sectiontextright = styled.div`
-width: 30%;
+width:68%;
 display: flex;
 padding-right:2rem;
 flex-direction: row-reverse;

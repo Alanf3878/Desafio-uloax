@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Headerbox = styled.div`
 display: flex;
 width: 88%;
-display: flex;
 justify-content: center;
 margin-left: 5%;
 `
