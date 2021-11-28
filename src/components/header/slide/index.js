@@ -46,7 +46,6 @@ export default function SimpleSlider () {
       slidesToScroll: 1,
       nextArrow: <S.SampleNextArrow />,
       prevArrow: <S.SamplePrevArrow />
-      
     };
     
 
